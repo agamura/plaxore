@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>e1c1708c-caaa-425b-bc0d-ca3056468b4a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>PlaXore.ShakeGestures</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Sensors\AccelerometerHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sensors\AccelerometerHelperReadingEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sensors\ApplicationSettingsHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sensors\Simple3DVector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShakeGestureEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShakeGesturesHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShakeType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Simulation.cs" />
+  </ItemGroup>
+</Project>

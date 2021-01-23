@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>9a96cde4-393a-4df5-a103-7a3e6e9aa7d4</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>PlaXore.Framework</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AutoHitTestMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BenchmarkObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Button.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\ContentControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Control.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\DockStyle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\GameInputEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Menu.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\MenuExtent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\MenuItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\MenuItemCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Orientation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\ScrollMenu.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Thickness.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Window.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\WindowManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameHost.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameRandomHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HighScoreEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HighScores.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HighScoreTable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\Direction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\GameInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\GestureDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\Input.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\TouchIndicator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)License.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MatrixCameraObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MatrixModelObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MatrixObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MatrixParticleObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MatrixSkyboxObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SettingsItemObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SettingsManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SpriteObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TextAlignment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TextObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VertexPositionDualTexture.cs" />
+  </ItemGroup>
+</Project>

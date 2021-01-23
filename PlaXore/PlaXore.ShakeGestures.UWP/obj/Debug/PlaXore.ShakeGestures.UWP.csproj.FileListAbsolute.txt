@@ -1,0 +1,16 @@
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\bin\Debug\PlaXore.ShakeGestures.dll
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\bin\Debug\PlaXore.ShakeGestures.pdb
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\bin\Debug\PlaXore.ShakeGestures.pri
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\PlaXore.ShakeGestures.dll
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\PlaXore.ShakeGestures.pdb
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\priconfig.xml
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\priconfig.xml.intermediate
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\layout.resfiles
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\layout.resfiles.intermediate
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\resources.resfiles
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\resources.resfiles.intermediate
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\pri.resfiles
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\pri.resfiles.intermediate
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\qualifiers.txt
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\qualifiers.txt.intermediate
+W:\plaxore\PlaXore\PlaXore.ShakeGestures.UWP\obj\Debug\MultipleQualifiersPerDimensionFound.txt

@@ -1,0 +1,5 @@
+W:\plaxore\PlaXore\PlaXore\bin\Debug\PlaXore.dll
+W:\plaxore\PlaXore\PlaXore\bin\Debug\PlaXore.pdb
+W:\plaxore\PlaXore\PlaXore\obj\Debug\PlaXore.dll
+W:\plaxore\PlaXore\PlaXore\obj\Debug\PlaXore.pdb
+W:\plaxore\PlaXore\PlaXore\obj\Debug\PlaXore.csprojResolveAssemblyReference.cache

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6326A026-AC01-4C98-8BC9-52167A2A8BAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlaXore.Media</RootNamespace>
+    <AssemblyName>PlaXore.Media</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\PlaXore.Media.XML</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\PlaXore.Media.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>PlaXore.Media.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AudioMetadata.cs" />
+    <Compile Include="BlockHeader.cs" />
+    <Compile Include="BlockType.cs" />
+    <Compile Include="CodecInfo.cs" />
+    <Compile Include="ContentAttribute.cs" />
+    <Compile Include="ContentAttributeCollection.cs" />
+    <Compile Include="ContentAttributeId.cs" />
+    <Compile Include="Endianness.cs" />
+    <Compile Include="Extensions\ImageExtensions.cs" />
+    <Compile Include="FrameMetadata.cs" />
+    <Compile Include="GlobalMetadata.cs" />
+    <Compile Include="IDecoder.cs" />
+    <Compile Include="IEncoder.cs" />
+    <Compile Include="InvalidContentException.cs" />
+    <Compile Include="MediaPlayer.cs" />
+    <Compile Include="MiwaDecoder.cs" />
+    <Compile Include="MiwaEncoder.cs" />
+    <Compile Include="ContentReader.cs" />
+    <Compile Include="ContentWriter.cs" />
+    <Compile Include="MiwaReader.cs" />
+    <Compile Include="MiwaWriter.cs" />
+    <Compile Include="PlayerState.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlaXore\PlaXore.csproj">
+      <Project>{9429d116-ab56-4720-90eb-7aa715c2999f}</Project>
+      <Name>PlaXore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlaXore.Media.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+    <ItemGroup>
+      <FilesToCopy Include="$(TargetPath)" />
+    </ItemGroup>
+    <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="..\..\..\lib\Default" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

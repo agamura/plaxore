@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>4537e148-0306-4e32-b1ef-8b12d2680d22</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>PlaXore.Media</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AudioMetadata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BlockHeader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BlockType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CodecInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContentAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContentAttributeCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContentAttributeId.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContentReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContentWriter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Endianness.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ImageExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FrameMetadata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GlobalMetadata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IDecoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IEncoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)InvalidContentException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MediaPlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MiwaDecoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MiwaEncoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MiwaReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MiwaWriter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PlayerState.cs" />
+  </ItemGroup>
+</Project>
